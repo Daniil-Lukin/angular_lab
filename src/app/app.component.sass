@@ -1,9 +1,20 @@
+@import '/src/styles/colors'
+
+:host ::ng-deep .mat-form-field.mat-focused .mat-form-field-ripple
+    background-color: $youtubeRed
+
+
 mat-toolbar-row
     width: 100%
     display: flex
     justify-content: center
     align-items: center
-    color: 'warn'
+    background-color: $navColor
+    color: $textColor
+
+    #home__button
+        background-color: $navColor
+        border: none
 
     .container
         width: 75%
@@ -13,5 +24,14 @@ mat-toolbar-row
 
         mat-form-field
             width: 75%
+            
+            mat-label, input, button
+                color: $textColor
 
+    button
+        color: $textColor
+        background-color: $buttonColor
+    
+    .mat-button
+        background-color: $navColor
                 

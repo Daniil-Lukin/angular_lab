@@ -1,0 +1,15 @@
+<div [ngClass]="{blockView: isList, gridView: !isList}">
+    <a [routerLink]="['/watch', videoId]">
+        <mat-card>
+            <mat-card-content>
+                <img src={{video.snippet.thumbnails.medium.url}}>
+                <p>{{video.snippet.description}}</p>
+            </mat-card-content>
+            <mat-card-footer>
+                <h2>{{video.snippet.title}}</h2>
+                <p>{{video.snippet.channelTitle}}</p>
+                <p>{{video.snippet.publishedAt | date}}</p>
+            </mat-card-footer>
+        </mat-card>
+    </a>
+</div>

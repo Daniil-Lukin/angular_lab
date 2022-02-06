@@ -1,1 +1,22 @@
-<p>video-page works!</p>
+<div class="wrapper">
+    <mat-card>
+        <iframe [src]="videoUrl | safeURL" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+        <h2>{{information.snippet.localized.title}}</h2>
+        <p>{{information.snippet.channelTitle}} {{information.snippet.publishedAt | date}}</p>
+        <div>
+            <p>
+                <mat-icon>thumb_up</mat-icon>
+                {{information.statistics.likeCount | decimal}}
+            </p>
+            <p>Views: {{information.statistics.viewCount | decimal}}</p>
+            <div *ngFor="let commentary of commentaryInfo">
+                <app-commentary-section [commentary]="commentary"></app-commentary-section>
+            </div>
+        </div>
+    </mat-card>
+    <div class="related__conteiner">
+        <div *ngFor="let relatedVideo of relatedVideosInfo">
+            <app-video-card [video]="relatedVideo" [isList]="false"></app-video-card>
+        </div>
+    </div>
+</div>

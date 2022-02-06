@@ -1,1 +1,10 @@
-<p>commentary-section works!</p>
+<mat-card class="example-card">
+    <img [src]=commentary.snippet.topLevelComment.snippet.authorProfileImageUrl >
+    <div class="content">
+            <h2>{{commentary.snippet.topLevelComment.snippet.authorDisplayName}}</h2>
+        <mat-card-content>
+            {{commentary.snippet.topLevelComment.snippet.textDisplay}}
+        </mat-card-content>
+        <p>{{commentary.snippet.topLevelComment.snippet.publishedAt | date}}</p>
+    </div>
+</mat-card>

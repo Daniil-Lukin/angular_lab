@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { VideoModule } from './video/video.module';
-import { VideoResolver } from './video/video.resolver';
+import { VideoResolver } from './video/resolvers/video.resolver';
+import { RelatedVideosResolver } from './video/resolvers/related-videos.resolver';
+import { CommentsResolver } from './video/resolvers/comments.resolver';
 
 const routes: Routes = [
   {
@@ -14,16 +16,19 @@ const routes: Routes = [
     loadChildren: () => import('./search/search.module').then((m) => m.SearchModule),
   },
   {
+    path: 'watch/:id',
+    loadChildren: () => import('./video/video.module').then((m) => m.VideoModule,),
+    resolve: {
+      videoInfo: VideoResolver,
+      relatedVideos: RelatedVideosResolver,
+      comments: CommentsResolver, 
+    }
+  },
+  {
     path: '**',
     redirectTo: 'search',
   },
-  {
-    path: 'watch',
-    loadChildren: () => import('./video/video.module').then((m) => VideoModule,),
-    resolve: {
-      videoInfo: VideoResolver,
-    }
-  },
+  
 ];
 
 @NgModule({

@@ -8,9 +8,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { MaterialModule } from './material/material.module';
 import { SearchModule } from './search/search.module';
-import { SafeURLPipe } from './search/pipes/safe-url.pipe';
+import { SafeURLPipe } from './video/pipes/safe-url.pipe';
 import { VideoPageComponent } from './video/component/video-page/video-page.component';
 import { VideoModule } from './video/video.module';
+import { SharedModule } from './shared/shared.module';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { VideoModule } from './video/video.module';
     MaterialModule,
     SearchModule,
     VideoModule,
+    SharedModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

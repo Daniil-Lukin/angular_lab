@@ -11,7 +11,9 @@ export class SafeURLPipe implements PipeTransform {
   constructor(private _sanitizer: DomSanitizer){}
 
   transform(url: any) {
-    return this._sanitizer.sanitize(SecurityContext.URL, url);
+    console.log(url);
+    return this._sanitizer.bypassSecurityTrustResourceUrl(url);
   }
 
 }
+//TODO: how to sanitaze links in angular

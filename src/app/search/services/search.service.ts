@@ -1,8 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { map, Observable, tap, catchError, throwError, Subject } from 'rxjs';
-import { SearchRoutingModule } from '../search-routing.module';
-import { SearchResultPageComponent } from '../components/search-result-page/search-result-page.component';
+import { ISearch } from '../interfaces/ISearch';
 
 @Injectable({
   providedIn: 'root'
@@ -14,22 +13,26 @@ export class SearchService {
 
   constructor(private _http: HttpClient) { }
 
-  public getVideos(query: string): Observable<any> {
+  public getVideos(query: string): Observable<ISearch> {
 
-    const APIKEY = "AIzaSyDw1gTIXCAKrLQSMj8HdazRLnOIVsuloqE"
-    const URL = `https://youtube.googleapis.com/youtube/v3/search?key=${APIKEY}&type=video&part=snippet&maxResults=2&q=${query}`;
+    // const APIKEY = "AIzaSyDw1gTIXCAKrLQSMj8HdazRLnOIVsuloqE";
+    const APIKEY: string = "AIzaSyAYkLTJ4H6nwpj2EhvSTpc-BP8VhhQRBk4 "; 
+    const amountOfVideos: number = 4;
+    const URL = `https://youtube.googleapis.com/youtube/v3/search?key=${APIKEY}&type=video&part=snippet&maxResults=${amountOfVideos}&q=${query}`;
     
     console.log(query);
-    return this._http.get<any>(URL).pipe(
+    return this._http.get<ISearch>(URL).pipe(
       tap(console.log),
       catchError(this.handleError),
       map(response => response.items)
     )
   }
-    //TODO: разобраться с observable 
-    //https://angular.io/guide/component-interaction#parent-and-children-communicate-via-a-service
-    //https://rxjs.dev/guide/observable
-    //Parent and children communicate using a service
+
+  public changeState(state: boolean): void{
+    this._isListSource.next(state);
+    console.log(state);
+  }
+    
   private handleError(errorMessage : HttpErrorResponse){
     let errorMessageText : string = "";
     if(errorMessage.error instanceof ErrorEvent){

@@ -1,3 +1,6 @@
-<div *ngFor="let video of videoList" [ngStyle]="{'display': isList ? 'block' : 'grid'} ">
-    <app-video-card [video]="video"></app-video-card>
+<mat-progress-bar mode="query" *ngIf="isLoading$ | async "></mat-progress-bar>
+<div [ngClass]="{blockView: isList, gridView: !isList}">
+    <div *ngFor="let video of videoList">
+        <app-video-card [video]="video" [isList]="isList"></app-video-card>
+    </div>
 </div>
