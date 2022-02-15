@@ -12,12 +12,12 @@ import { SafeURLPipe } from './video/pipes/safe-url.pipe';
 import { VideoPageComponent } from './video/component/video-page/video-page.component';
 import { VideoModule } from './video/video.module';
 import { SharedModule } from './shared/shared.module';
+import { HeaderModule } from './header/header.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    
   ],
   imports: [
     BrowserModule,
@@ -29,6 +29,7 @@ import { SharedModule } from './shared/shared.module';
     SearchModule,
     VideoModule,
     SharedModule,
+    HeaderModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

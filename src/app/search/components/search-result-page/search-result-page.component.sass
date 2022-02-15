@@ -1,6 +1,18 @@
 @import '/src/styles/colors'
-    
 
+:host ::ng-deep .mat-progress-bar-buffer.mat-progress-bar-element 
+        background-color: $youtubeRed
+
+:host ::ng-deep .mat-progress-bar-primary.mat-progress-bar-fill.mat-progress-bar-element
+        background-color: $secondLoaderColor
+
+:host ::ng-deep .mat-progress-bar-primary.mat-progress-bar-fill.mat-progress-bar-element::after
+        background-color: $thirdLoaderColor
+
+:host ::ng-deep .mat-progress-bar-fill::after
+        background-color: $fourthLoaderColor
+
+        // TODO: можно сделать легкий переход с помощью различных цветов
 .blockView
         display: block
         

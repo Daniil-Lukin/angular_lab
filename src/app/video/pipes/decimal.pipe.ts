@@ -7,6 +7,7 @@ export class DecimalPipe implements PipeTransform {
 
   transform(value: string | number): string {
     return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    //separates the digits of a number with commas
   }
 
 }

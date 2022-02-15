@@ -9,8 +9,8 @@ import { IVideo } from 'src/app/video/interfaces/IVideo'
 })
 export class VideoService {
 
-  // private _APIKEY: string = "AIzaSyC9hgN-WLzNJITQWUwUd09pt5E3HI_aLmg";
-  private _APIKEY: string = "AIzaSyAYkLTJ4H6nwpj2EhvSTpc-BP8VhhQRBk4 ";
+  private _APIKEY: string = "AIzaSyC9hgN-WLzNJITQWUwUd09pt5E3HI_aLmg";
+  // private _APIKEY: string = "AIzaSyAYkLTJ4H6nwpj2EhvSTpc-BP8VhhQRBk4 ";
   constructor(private _http: HttpClient) { }
 
 
@@ -44,8 +44,4 @@ export class VideoService {
     )
   }
 
-  // public getComments(id: string): Observable<any>{
-  //  как получить id коммента?
-  //   const URL: string = ``
-  // }
 }

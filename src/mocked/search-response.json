@@ -1,0 +1,148 @@
+{
+    "kind": "youtube#searchListResponse",
+    "etag": "jyjzO3XCp9SXKzkHg_WrNpEhMGs",
+    "nextPageToken": "CAQQAA",
+    "regionCode": "BY",
+    "pageInfo": {
+        "totalResults": 1000000,
+        "resultsPerPage": 4
+    },
+    "items": [
+        {
+            "kind": "youtube#searchResult",
+            "etag": "atlHMdm2JciuZHBQQJgxhyPK7K4",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "zz6y1evd894"
+            },
+            "snippet": {
+                "publishedAt": "2013-03-22T20:41:35Z",
+                "channelId": "UCdnFX7mzgup9moXG2fULOog",
+                "title": "Javascript-джедай #8 - null и undefined",
+                "description": "Группа ВК: http://vk.com/soraxcss Я ВК: http://vk.com/art.sorax Я на FB: http://www.fb.com/art.sorax.",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/zz6y1evd894/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/zz6y1evd894/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/zz6y1evd894/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Sorax",
+                "liveBroadcastContent": "none",
+                "publishTime": "2013-03-22T20:41:35Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "Psf60JFH11kwtynUjn7kss46kjk",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "g7jDucodUzQ"
+            },
+            "snippet": {
+                "publishedAt": "2020-09-24T07:00:03Z",
+                "channelId": "UCedskVwIKiZJsO8XdJdLKnA",
+                "title": "Типы данных JAVASCRIPT. Null String Undefined Boolean Number и другие. Уроки JAVASCRIPT с нуля 2020",
+                "description": "Что такое типы данных JAVASCRIPT? В прошлом уроке JavaScript с нуля мы изучили работу с переменными и знаем, что ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/g7jDucodUzQ/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/g7jDucodUzQ/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/g7jDucodUzQ/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Фрилансер по жизни - IT и фриланс",
+                "liveBroadcastContent": "none",
+                "publishTime": "2020-09-24T07:00:03Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "OsEDDk0-EGFZSAahuae2z7BNvfk",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "8FOrfPpnhFI"
+            },
+            "snippet": {
+                "publishedAt": "2017-11-06T19:20:13Z",
+                "channelId": "UC2sZyDm1FqBWrWiCiAuI2Ug",
+                "title": "Undefined",
+                "description": "look an B E P i S Technically, the square root of -1 is i, an imaginary number. I was debating changing it, but that's how it is in the ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/8FOrfPpnhFI/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/8FOrfPpnhFI/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/8FOrfPpnhFI/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Timotainment",
+                "liveBroadcastContent": "none",
+                "publishTime": "2017-11-06T19:20:13Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "CrK7aAN4nt3pXp7aSG6y6ojnzcM",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "u3lLvnbKyKQ"
+            },
+            "snippet": {
+                "publishedAt": "2021-08-29T15:00:31Z",
+                "channelId": "UCNfjXxbFn-X6Gppd8trnuRA",
+                "title": "Nando Fortunato - It&#39;s Undefined (NICCKO Remix)",
+                "description": "Stream/Download: https://vibe.deepdiscomusic.com/ddr251 ▻Rezilienza https://www.youtube.com/c/Rezilienza ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/u3lLvnbKyKQ/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/u3lLvnbKyKQ/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/u3lLvnbKyKQ/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Rezilienza",
+                "liveBroadcastContent": "none",
+                "publishTime": "2021-08-29T15:00:31Z"
+            }
+        }
+    ]
+}

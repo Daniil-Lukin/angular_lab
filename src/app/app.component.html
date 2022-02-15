@@ -1,21 +1,2 @@
-<mat-toolbar-row role="heading">
-  <button id="home__button" (click)="onHomeClick()">
-      <mat-icon>home</mat-icon>
-  </button>
-  <div class="container">
-    <mat-form-field type="search">
-      <mat-label>Search</mat-label>
-      <input matInput type="text" [(ngModel)]="searchQuery">
-      <button *ngIf="searchQuery" matSuffix mat-icon-button  aria-label="Clear" (click)="searchQuery='' ">
-        <mat-icon>close</mat-icon>
-      </button>
-    </mat-form-field>
-    <button mat-raised-button (click)="onSearchClick()">
-      <mat-icon>search</mat-icon>
-    </button>
-  </div>
-  <button mat-button (click)="onViewClick()">
-    <mat-icon>{{iconCode}}</mat-icon>
-  </button>
-</mat-toolbar-row>
+<app-header></app-header>
 <router-outlet></router-outlet>

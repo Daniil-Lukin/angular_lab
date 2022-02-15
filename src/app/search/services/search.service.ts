@@ -15,8 +15,8 @@ export class SearchService {
 
   public getVideos(query: string): Observable<ISearch> {
 
-    // const APIKEY = "AIzaSyDw1gTIXCAKrLQSMj8HdazRLnOIVsuloqE";
-    const APIKEY: string = "AIzaSyAYkLTJ4H6nwpj2EhvSTpc-BP8VhhQRBk4 "; 
+    const APIKEY = "AIzaSyDw1gTIXCAKrLQSMj8HdazRLnOIVsuloqE";
+    // const APIKEY: string = "AIzaSyAYkLTJ4H6nwpj2EhvSTpc-BP8VhhQRBk4 "; 
     const amountOfVideos: number = 4;
     const URL = `https://youtube.googleapis.com/youtube/v3/search?key=${APIKEY}&type=video&part=snippet&maxResults=${amountOfVideos}&q=${query}`;
     
