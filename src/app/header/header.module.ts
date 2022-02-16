@@ -14,6 +14,7 @@ import { SearchContainerComponent } from './components/search-container/search-c
     CommonModule,
     MaterialModule,
     FormsModule,
+    
   ]
 })
 export class HeaderModule { }

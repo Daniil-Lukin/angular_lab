@@ -9,7 +9,9 @@ import { ISearch } from '../interfaces/ISearch';
 export class SearchService {
 
   private _isListSource = new Subject<boolean>();
+  private _querySource = new Subject<string>();
   public isList$ = this._isListSource.asObservable();
+  public query$ = this._querySource.asObservable();
 
   constructor(private _http: HttpClient) { }
 
@@ -31,6 +33,10 @@ export class SearchService {
   public changeState(state: boolean): void{
     this._isListSource.next(state);
     console.log(state);
+  }
+
+  public registrateQuery(query: string): void{
+    this._querySource.next(query); //Стоит ли здесь проверять запретку или же стоит это выносить куда-то ещё
   }
     
   private handleError(errorMessage : HttpErrorResponse){

@@ -6,7 +6,7 @@
       <mat-form-field type="search">
         <mat-label>Search</mat-label>
         <input matInput type="text" [(ngModel)]="searchQuery">
-        <button *ngIf="searchQuery" matSuffix mat-icon-button  aria-label="Clear" (click)="searchQuery='' ">
+        <button *ngIf="searchQuery" title="Отчистить" matSuffix mat-icon-button  aria-label="Clear" (click)="searchQuery='' ">
           <mat-icon>close</mat-icon>
         </button>
       </mat-form-field>
@@ -17,4 +17,8 @@
     <button mat-button (click)="onViewClick()">
       <mat-icon>{{iconCode}}</mat-icon>
     </button>
+    <button mat-button (click)="onSearchListClick()">
+      <mat-icon>power_input</mat-icon>
+    </button>
   </mat-toolbar-row>
+  <app-search-container [ngClass]="{displayed: displayQueries, hidden: !displayQueries}"></app-search-container>
