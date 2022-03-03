@@ -13,11 +13,14 @@ import { VideoPageComponent } from './video/component/video-page/video-page.comp
 import { VideoModule } from './video/video.module';
 import { SharedModule } from './shared/shared.module';
 import { HeaderModule } from './header/header.module';
+import { AuthComponent } from './auth.component';
+import { AuthModule } from './authorization/auth/auth.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    AuthComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,6 +33,7 @@ import { HeaderModule } from './header/header.module';
     VideoModule,
     SharedModule,
     HeaderModule,
+    AuthModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
