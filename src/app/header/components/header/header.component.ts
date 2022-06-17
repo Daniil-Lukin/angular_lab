@@ -63,7 +63,6 @@ export class HeaderComponent implements OnInit {
         }
       }
     }
-    //Check if query contains one of ban words
 
       for(let query of this.child.queryArray){
         if(this.searchQuery === query){
@@ -72,7 +71,6 @@ export class HeaderComponent implements OnInit {
           secondCheck = secondCheck && true;
         }
       }
-     //Chek if one of ....... damn, I gotta redo this
 
     return (firstCheck && secondCheck);
   }

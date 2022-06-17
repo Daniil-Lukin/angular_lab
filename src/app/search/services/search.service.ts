@@ -19,7 +19,7 @@ export class SearchService {
 
     const APIKEY = "AIzaSyDw1gTIXCAKrLQSMj8HdazRLnOIVsuloqE";
     // const APIKEY: string = "AIzaSyAYkLTJ4H6nwpj2EhvSTpc-BP8VhhQRBk4 "; 
-    const amountOfVideos: number = 4;
+    const amountOfVideos: number = 16;
     const URL = `https://youtube.googleapis.com/youtube/v3/search?key=${APIKEY}&type=video&part=snippet&maxResults=${amountOfVideos}&q=${query}`;
     
     console.log(query);
@@ -36,7 +36,7 @@ export class SearchService {
   }
 
   public registrateQuery(query: string): void{
-    this._querySource.next(query); //Стоит ли здесь проверять запретку или же стоит это выносить куда-то ещё
+    this._querySource.next(query);
   }
     
   private handleError(errorMessage : HttpErrorResponse){
