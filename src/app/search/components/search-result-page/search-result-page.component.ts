@@ -26,7 +26,7 @@ export class SearchResultPageComponent implements OnInit{
     this._setLoader();
   }
   
-  private _getSearchData() {
+  protected _getSearchData() {
     this._route.queryParams
       .pipe(
         switchMap((params: Params) => this._searchService.getVideos(params['query']))
